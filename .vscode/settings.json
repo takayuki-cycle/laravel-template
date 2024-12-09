@@ -1,0 +1,10 @@
+{
+  "editor.formatOnType": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBorder": "#00A5FD",
+    "activityBar.border": "#00A5FD"
+  },
+  "cSpell.words": ["laravel"]
+}
