@@ -36,10 +36,7 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
   ->middleware('auth')
   ->name('logout');
 
-////////////
-Route::get('/hello-world', function () {
-  return [
-    'message' => 'hello-world',
-    'csrf_token' => csrf_token(),
-  ];
+// 以下から自作
+Route::get('/csrf-token', function () {
+  return response()->json(['csrf_token' => csrf_token()]);
 });
